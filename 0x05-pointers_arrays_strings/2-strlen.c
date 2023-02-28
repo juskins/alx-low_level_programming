@@ -6,9 +6,8 @@
  */
 int _strlen(char *s)
 {
-int a;
-for (a = 0; a < *s++; a++)
-{
+int a = 0;
+for (; *s++;)
+a++;
 return (a);
 }
-
