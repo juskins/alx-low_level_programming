@@ -1,5 +1,5 @@
 /**
- * main - check the code
+ * _strlen - return the length of a string
  * @s: char to check
  * Description: this will return the length of a string
  * Return: Always 0.
