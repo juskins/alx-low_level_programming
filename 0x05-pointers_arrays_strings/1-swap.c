@@ -11,5 +11,5 @@ int swap;
 
 swap = *a;
 *a = *b;
-*b = *a;
+*b = swap;
 }
