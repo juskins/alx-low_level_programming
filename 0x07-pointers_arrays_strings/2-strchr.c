@@ -1,19 +1,26 @@
-#include <stdio.h>
 #include "main.h"
-/**
- * _memset - function that fills memory with constant bytes
- * @s: pointer that moves first n bytes
- * @n: size of bytes of the memory area
- * @b: constant byte to be moved
- * Return: A pointer that returns a char to s
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
+#include <stdio.h>
 
-	for (i = 0 ; i < n ; i++)
+/**
+ * _strchr - Locates a character in a string.
+ * @s: string to search
+ * @c: character to locate
+ *
+ * Return: If c is found - a pointer to the first occurence.
+ *         If c is not found - NULL.
+ */
+
+char *_strchr(char *s, char c)
+{
+	int i;
+
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		s[i] = b;
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
 	}
-	return (s);
+
+	return (NULL);
 }
