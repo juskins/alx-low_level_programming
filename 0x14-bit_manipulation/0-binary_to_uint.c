@@ -29,5 +29,5 @@ unsigned int binary_to_uint(const char *b)
 		if (b[length] == '1')
 			digit += 1;
 	}
-	return (num);
+	return (digit);
 }
