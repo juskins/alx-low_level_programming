@@ -3,10 +3,10 @@
 
 /**
  * set_bit - Function sets the value of a bit to 1
- * @n: Avariable pointer to the bit to set
+ * @n: A variable pointer to the bit to set
  * @index: The variable index to set the bit value to
  * Return: Returns 1 if error occurs, Else returns -1
- **/
+ */
 
 it set_bit(unsigned long int *n, unsigned int index)
 {
