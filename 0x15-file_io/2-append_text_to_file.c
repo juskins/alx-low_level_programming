@@ -3,7 +3,6 @@
 #include <sys/types.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdlib.h>
 /**
  * strlen - Function that return string length
  * @string: AA pointer to string
