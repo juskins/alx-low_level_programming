@@ -4,16 +4,16 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
- * strlen - Function that return string length
- * @string: AA pointer to string
+ * _strlen - Function that return string length
+ * @str: A pointer to string
  * Return: Returns the length of string
  */
 
-size_t strlen(char *string)
+size_t _strlen(char *str)
 {
 	size_t i = 0;
 
-	while (string[i])
+	while (str[i])
 		i++;
 	return (i);
 }
@@ -38,7 +38,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filed == -1)
 		return (-1);
 	if (text_content != NULL)
-		length = write(filed, text_content, strlen(text_content));
+		length = write(filed, text_content, _strlen(text_content));
 	close(filed);
 	if (length == -1)
 		return (-1);
