@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  * print_binary - Function prints binary rep of a number
  * @n: the binary number to print
  */
